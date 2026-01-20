@@ -6,15 +6,12 @@ const Navbar = () => {
 
   return (
     <header className="w-full bg-white shadow-sm">
-      {/* ================= TOP BAR ================= */}
       <div className="max-w-7xl mx-auto px-4 py-3 flex flex-col md:flex-row md:justify-between md:items-center gap-3">
         
-        {/* Logo */}
         <div className="flex items-center gap-2">
           <img src={logo} alt="Unify Healthcare" className="h-10 md:h-12" />
         </div>
 
-        {/* Address & Phone (hide on small screens) */}
         <div className="hidden md:flex items-center gap-6 text-sm text-gray-600">
           <div className="flex items-center gap-2">
             <span className="text-red-500">🏠</span>
@@ -26,7 +23,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Hamburger (mobile only) */}
         <button
           className="md:hidden absolute right-4 top-5 text-2xl"
           onClick={() => setOpen(!open)}
@@ -37,9 +33,7 @@ const Navbar = () => {
 
       <hr />
 
-      {/* ================= MENU ================= */}
       <nav className="max-w-7xl mx-auto px-4">
-        {/* Desktop Menu */}
         <ul className="hidden md:flex gap-12 py-6 text-gray-800 font-medium">
           <li className="text-red-500 cursor-pointer">Home</li>
           <li className="cursor-pointer hover:text-red-500">Physician Billing</li>
@@ -51,7 +45,6 @@ const Navbar = () => {
           <li className="cursor-pointer hover:text-red-500">Contact</li>
         </ul>
 
-        {/* Mobile Menu */}
         {open && (
           <ul className="md:hidden flex flex-col gap-4 py-6 text-gray-800 font-medium">
             <li className="text-red-500">Home</li>
@@ -63,7 +56,6 @@ const Navbar = () => {
             <li>Company</li>
             <li>Contact</li>
 
-            {/* Mobile contact info */}
             <div className="pt-4 border-t text-sm text-gray-600">
               <p className="flex items-center gap-2 mb-2">
                 <span className="text-red-500">🏠</span>
