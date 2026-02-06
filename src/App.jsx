@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Navbar from './components/common/Navbar'
 import DrVideo from './components/common/DrVideo'
