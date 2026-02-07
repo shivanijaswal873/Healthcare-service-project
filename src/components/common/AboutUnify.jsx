@@ -1,4 +1,4 @@
-import doc from "@/assets/imageDr.webp";
+import doc from "@/assets/imageDR.webp";
 
 const AboutUnify = () => {
   return (
