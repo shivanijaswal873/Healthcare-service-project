@@ -1,4 +1,4 @@
-import doc from "@/assets/imageDR.png";
+import doc from "@/assets/image-dr.png";
 
 const AboutUnify = () => {
   return (
